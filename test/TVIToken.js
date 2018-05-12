@@ -113,6 +113,7 @@ contract('TVIToken', function (accounts) {
             return tokenInstance.allowance(fromAccount, spendingAccount);
         }).then(function (allowance) {
             assert.equal(allowance.toNumber(), 0, 'deduct the amount from the allowance');
+            //Try to buy tokens different the ether value
         });
     });
 
